@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Nyanchwa Mission Hospital Church -Events</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/NAMH LOGO.jpg">
+    <style>
+/* Events Section */
+#events {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.event-list, .past-events {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-item {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-item h3 {
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00695c;
+}
+
+/* Form Styling */
+.event-registration {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #00695c;
+}
+
+/* Responsive Design for Mobile Optimization */
+@media (max-width: 768px) {
+    .event-list, .past-events {
+        flex-direction: column;
+    }
+
+    .event-item {
+        padding: 15px;
+    }
+
+    .form-group input, .form-group select {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .form-group input, .form-group select {
+        font-size: 0.9rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.jpeg" alt="Nyanchwa Mission SDA Church Logo" style="width: 60px; height: 60px; border-radius: 50%; vertical-align: middle; margin-right: 10px;">
+        <h1>Nyanchwa Mission Hospital Church (NAHM)</h1>
+        <nav id= " main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sermons.html">Sermons & Media</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="giving.html">Giving</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event-item">
+                <h3>Community Outreach Day</h3>
+                <p>Date: Saturday, November 5, 2024</p>
+                <p>Time: 9:00 AM - 4:00 PM</p>
+                <p>Location: Nyanchwa Mission Grounds</p>
+                <p>Description: Join us as we give back to the community with various charitable activities including a food drive, health services, and spiritual support.</p>
+                <a href="#register" class="btn">Register</a>
+            </div>
+            <div class="event-item">
+                <h3>Christmas Cantata</h3>
+                <p>Date: Sunday, December 24, 2024</p>
+                <p>Time: 6:00 PM - 8:00 PM</p>
+                <p>Location: Nyanchwa Mission SDA Church</p>
+                <p>Description: Celebrate the birth of Christ with us through music, drama, and worship in our annual Christmas cantata.</p>
+                <a href="#register" class="btn">Register</a>
+            </div>
+            <div class="event-item">
+                <h3>Youth Conference 2025</h3>
+                <p>Date: January 15 - 17, 2025</p>
+                <p>Time: All Day</p>
+                <p>Location: Nyanchwa Mission SDA Church</p>
+                <p>Description: A three-day event focused on empowering the youth with spiritual teachings, workshops, and interactive sessions.</p>
+                <a href="#register" class="btn">Register</a>
+            </div>
+        </div>
+
+        <!-- Past Events Section -->
+        <h2>Past Events</h2>
+        <div class="past-events">
+            <div class="event-item">
+                <h3>Health and Wellness Seminar</h3>
+                <p>Date: August 25, 2024</p>
+                <p>Description: A full-day seminar promoting physical, mental, and spiritual well-being. Topics included healthy eating, exercise, and mental health strategies.</p>
+            </div>
+            <div class="event-item">
+                <h3>Women's Ministry Day</h3>
+                <p>Date: September 10, 2024</p>
+                <p>Description: A special day dedicated to celebrating women’s role in the church, with speakers, group discussions, and prayer sessions.</p>
+            </div>
+        </div>
+
+        <!-- Event Registration Form -->
+        <h2 id="register">Register for an Event</h2>
+        <form class="event-registration" action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="Community Outreach Day">Community Outreach Day</option>
+                    <option value="Christmas Cantata">Christmas Cantata</option>
+                    <option value="Youth Conference 2025">Youth Conference 2025</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-media">
+            <h3>Connect with us</h3>
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Nyanchwa Mission SDA Church</p>
+    </footer>
+ <script src="js/script.js"></script>
+</body>
+</html>

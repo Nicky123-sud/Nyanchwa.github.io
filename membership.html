@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nyanchwa Mission Hospital Church -Membership</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" type="image/x-icon" href="images/NAMH LOGO.jpg">
+    <style>
+        /* Mobile-Friendly Navigation */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Hover effects for navigation */
+        nav ul li a:hover {
+            background-color: #00897b;
+            color: white;
+        }
+
+        /* Styling the membership section */
+        #membership {
+            background-color: #e0f2f1;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #membership h2 {
+            font-size: 2rem;
+            color: #004d40;
+            margin-bottom: 10px;
+        }
+
+        /* FAQ Styling */
+        .faq .answer {
+            display: none;
+            margin: 0 0 10px;
+        }
+
+        .faq h4 {
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .faq h4:hover {
+            color: #00897b;
+        }
+
+        /* Form Styling */
+        form {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #00897b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.jpeg" alt="Nyanchwa Mission SDA Church Logo" style="width: 60px; height: 60px; border-radius: 50%; vertical-align: middle; margin-right: 10px;">
+        <h1>Nyanchwa Mission Hospital Church (NAHM)</h1>
+         <nav id= " main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sermons.html">Sermons & Media</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="giving.html">Giving</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Membership Section -->
+    <section id="membership">
+        <h2>Membership at Nyanchwa Mission SDA Church</h2>
+        <p>Welcome to the membership section of Nyanchwa Mission SDA Church! We invite you to become part of our vibrant community dedicated to worship, service, and spiritual growth.</p>
+
+        <h3>Benefits of Membership</h3>
+        <ul>
+            <li><strong>Community Support:</strong> As a member, you will connect with a supportive community that encourages and uplifts each other.</li>
+            <li><strong>Spiritual Growth:</strong> Engage in spiritual activities, Bible studies, and worship services designed to enhance your faith.</li>
+            <li><strong>Service Opportunities:</strong> Participate in various ministries and outreach programs to serve our church and the community.</li>
+            <li><strong>Access to Resources:</strong> Enjoy access to church resources, including educational materials and programs.</li>
+            <li><strong>Exclusive Events:</strong> Members are invited to special events, retreats, and activities organized for fellowship and spiritual enrichment.</li>
+        </ul>
+
+        <h3>How to Join</h3>
+        <p>Joining Nyanchwa Mission SDA Church is a simple process:</p>
+        <ol>
+            <li>Attend our worship services to experience our community.</li>
+            <li>Speak with a church leader or fill out a membership application form available at the church office.</li>
+            <li>Participate in a membership orientation session to understand the values and commitments of our church.</li>
+            <li>Be baptized (if not already) and officially welcomed into the church community.</li>
+        </ol>
+
+        <!-- Frequently Asked Questions (FAQs) -->
+        <h3>Frequently Asked Questions (FAQs)</h3>
+        <div class="faq">
+            <h4 style="font-size: 1rem;">1. Do I need to be baptized to become a member?</h4>
+            <p class="answer">Yes, we encourage baptism as a step towards membership. If you have been baptized in a Christian church, please speak with a church leader.</p>
+
+            <h4 style="font-size: 1rem;">2. Are there membership fees?</h4>
+            <p class="answer">No, there are no fees to join. However, we encourage regular tithes and offerings to support church activities.</p>
+
+            <h4 style="font-size: 1rem;">3. Can I attend services without being a member?</h4>
+            <p class="answer">Absolutely! We welcome everyone to our services and community events regardless of membership status.</p>
+
+            <h4 style="font-size: 1rem;">4. How often do members meet?</h4>
+            <p class="answer" >Members are encouraged to participate in weekly services, Bible studies, and monthly meetings to stay engaged and involved.</p>
+        </div>
+
+        <!-- Membership Application Form -->
+        <h3 style="font-size: 1.1rem;">Join Us</h3>
+        <form action="submit_membership" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Why do you want to join?</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-media">
+            <h3>Connect with us</h3>
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Nyanchwa Mission SDA Church</p>
+    </footer>
+
+    <!-- JavaScript for collapsible FAQs -->
+    <script>
+        const faqHeaders = document.querySelectorAll('.faq h4');
+        faqHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const answer = header.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
